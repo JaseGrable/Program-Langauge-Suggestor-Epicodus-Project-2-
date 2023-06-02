@@ -1,36 +1,31 @@
 window.onload = function () {
     const questionForm = document.getElementById('questionForm');
-    const questions = questionForm.getElementsByClassName('question');
+    const question1 = document.getElementById('question1');
+    const question2 = document.getElementById('question2');
+    const question3 = document.getElementById('question3');
+    const question4 = document.getElementById('question4');
+    const question5 = document.getElementById('question5');
     const resultSection = document.getElementById('result');
+    const resultPython = document.getElementById('pythonResult');
+    const resultJava = document.getElementById('javaResult');
+    const resultC = document.getElementById('cResult');
+    const resultRetry = document.getElementById('resultRetry');
+    const refreshButton = document.getElementById('refreshButton');
 
-    // Function to show questions one by one
-    function showNextQuestion(index) {
-        // Check if there are questions remaining to show
-        if (index < questions.length) {
-            // Hide all questions
-            for (let i = 0; i < questions.length; i++) {
-                questions[i].classList.add('hidden');
-            }
+    function showQuestion1() {
+        question1.classList.remove('hidden');
 
-            // Show the next question
-            questions[index].classList.remove('hidden');
+        const answerInputs = question1.querySelectorAll('input[type="radio"]');
+        answerInputs.forEach(function (input)) {
+            input.addEventListener('change', function () {
+                const selectedValue = input.value;
 
-            // Create event listener for the current question's answer inputs
-            const answerInputs = questions[index].querySelectorAll('input[type="radio"]');
-            for (let i = 0; i < answerInputs.length; i++) {
-                answerInputs[i].addEventListener('change', function () {
-                    if (answerInputs[i].value === 'yes') {
-                        // 'Yes' is selected, show results section and end
-                        resultSection.classList.remove('hidden');
-                    } else {
-                        // 'No' is selected, show next question
-                        showNextQuestion(index + 1);
-                    }
-                });
-            }
+                if (selectedValue === 'yes') {
+                    showResultPython();
+                } else {
+                    showQuestion2();
+                }
+            })
         }
     }
-
-    // Start the question process
-    showNextQuestion(0);
-};
+}
