@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <title>Learn a Language</title>
 </head>
 
 <body>
     <h1>Welcome to a new journey!</h1>
     <p>Hello! Welcome to my short quiz page. I built this page for a project at Epicodus Coding Bootcamp.</p>
+    <h2>Purpose of Website</h2>
     <p>
         This quiz will help you determine which programming language you should
         learn first.<br> This website focuses on javascript
@@ -23,20 +25,42 @@
         suits
         you.
     </p>
-    <h2>Please answer one question below:</h2>
-    <form>
-        <label for="snakeLover">Do you like Snakes?</label>
-        <input id="snakeLover" type="radio" name="snakeLover">
-        <label for="coffeeLover">Do you like Coffee?</label>
-        <input id="coffeeLover" type="radio"" name=" coffeeLover">
-        <label for="musicLover">Do you like Music?</label>
-        <input id="musicLover" type="radio"" name=" musicLover">
-        <label for="movieLover">Do you like Movies?</label>
-        <input id="movieLover" type="radio"" name=" movieLover">
-        <label for="juiceLover">Do you like Oranje Juice?</label>
-        <input id="juiceLover" type="radio" name="juiceLover">
-        <button type="submit">Show me what language to learn!</button>
-    </form>
+    <h3>Languages Suggested</h3>
+    <p>Depending on your answer you will be directed to learn one of three languages.</p>
+    <ul>
+        <li>Python</li>
+        <li>C#</li>
+        <li>Javascript</li>
+    </ul>
+    <h3>Please answer one question below:</h2>
+        <form>
+            <div class="radio-align">
+                <label for="snakeLover">Do you like Snakes?</label>
+                <input id="snakeLover" type="radio" name="snakeLover" checked="checked">
+            </div>
+            <div class="radio-align">
+                <label for="coffeeLover">Do you like Coffee?</label>
+                <input id="coffeeLover" type="radio"" name=" coffeeLover">
+            </div>
+            <div class="radio-align">
+                <label for="musicLover">Do you like Music?</label>
+                <input id="musicLover" type="radio"" name=" musicLover">
+            </div>
+            <div class="radio-align">
+                <label for="movieLover">Do you like Movies?</label>
+                <input id="movieLover" type="radio"" name=" movieLover">
+            </div>
+            <div class="radio-align">
+                <label for="juiceLover">Do you like Orange Juice?</label>
+                <input id="juiceLover" type="radio" name="juiceLover">
+            </div>
+            <button type="submit">Show me what language to learn!</button>
+        </form>
+        <div id="qanswer" class="hidden">
+            <h3>Results!</h3>
+            <p>Your result will appear here</p>
+
+        </div>
 </body>
 
 </html>
