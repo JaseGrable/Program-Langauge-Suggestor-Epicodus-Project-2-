@@ -11,6 +11,7 @@
 </head>
 
 <body>
+
     <h1>Welcome to a new journey!</h1>
     <p>Hello! Welcome to my short quiz page. I built this page for a project at Epicodus Coding Bootcamp.</p>
     <h2>Purpose of Website</h2>
@@ -35,7 +36,7 @@
     </ul>
     <h3>Please answer the following question(s):</h3>
     <form id="questionForm">
-        <div class="question">
+        <div id="question1" class="question">
             <h4>Question 1</h4>
             <label for="snakeLover">Do you like Snakes?</label>
             <div class="answer">
@@ -43,7 +44,7 @@
                 <input id="snakeHater" type="radio" value="yes" name=" answer" checked="checked"> No
             </div>
         </div>
-        <div class="question">
+        <div id="question2" class="question">
             <h4>Question 2</h4>
             <label for="coffeeLover">Do you like Coffee?</label>
             <div class="answer">
@@ -51,7 +52,7 @@
                 <input id="coffeeHater" type="radio" value="yes" name=" answer" checked="checked"> No
             </div>
         </div>
-        <div class="question">
+        <div id="question3" class="question">
             <h4>Question 3</h4>
             <label for="musicLover">Do you like Music?</label>
             <div class="answer">
@@ -59,7 +60,7 @@
                 <input id="musicHater" type="radio" value="yes" name=" answer" checked="checked"> No
             </div>
         </div>
-        <div class="question">
+        <div id="question4" class="question">
             <h4>Question 4</h4>
             <label for="movieLover">Do you like Movies?</label>
             <div class="answer">
@@ -67,7 +68,7 @@
                 <input id="movieHater" type="radio" value="yes" name=" answer" checked="checked"> No
             </div>
         </div>
-        <div class="question">
+        <div id="question5" class="question">
             <h4>Question 5</h4>
             <label for="juiceLover">Do you like Orange Juice?</label>
             <div class="answer">
@@ -75,12 +76,23 @@
                 <input id="juiceHater" type="radio" value="yes" name=" answer" checked="checked"> No
             </div>
         </div>
-    </form>
-    <div id="results" class="hidden">
-        <h3>Results!</h3>
-        <p>Your result will appear here</p>
+        <div id="result" class="hidden">
+            <h3>Results!</h3>
+            <div id="pythonResult" class="hidden">
+                <p>You should learn Python. Pretty soon you'll be snaking through the industry!</p>
+            </div>
 
-    </div>
+            <div id="javaResult" class="hidden">
+                <p>You should learn Javascript. I couldn't think of something witty here.</p>
+            </div>
+
+            <div id="cResult" class="hidden">
+                <p>You should learn C#. Time for a big dose of Vitamin C..#!</p>
+            </div>
+        </div>
+    </form>
+    <script src="js/scripts.js">  </script>
+
 </body>
 
 </html>
