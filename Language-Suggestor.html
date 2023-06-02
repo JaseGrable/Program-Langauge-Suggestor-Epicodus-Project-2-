@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="js/scripts.js">  </script>
     <title>Learn a Language</title>
 </head>
 
@@ -32,35 +33,54 @@
         <li>C#</li>
         <li>Javascript</li>
     </ul>
-    <h3>Please answer one question below:</h2>
-        <form>
-            <div class="radio-align">
-                <label for="snakeLover">Do you like Snakes?</label>
-                <input id="snakeLover" type="radio" name=" answer" checked="checked">
+    <h3>Please answer the following question(s):</h3>
+    <form id="questionForm">
+        <div class="question">
+            <h4>Question 1</h4>
+            <label for="snakeLover">Do you like Snakes?</label>
+            <div class="answer">
+                <input id="snakeLover" type="radio" value="yes" name=" answer" checked="checked"> Yes
+                <input id="snakeHater" type="radio" value="yes" name=" answer" checked="checked"> No
             </div>
-            <div class="radio-align">
-                <label for="coffeeLover">Do you like Coffee?</label>
-                <input id="coffeeLover" type="radio" name=" answer">
-            </div>
-            <div class="radio-align">
-                <label for="musicLover">Do you like Music?</label>
-                <input id="musicLover" type="radio" name=" answer">
-            </div>
-            <div class="radio-align">
-                <label for="movieLover">Do you like Movies?</label>
-                <input id="movieLover" type="radio" name=" answer">
-            </div>
-            <div class="radio-align">
-                <label for="juiceLover">Do you like Orange Juice?</label>
-                <input id="juiceLover" type="radio" name=" answer">
-            </div>
-            <button type="submit">Show me what language to learn!</button>
-        </form>
-        <div id="qanswer" class="hidden">
-            <h3>Results!</h3>
-            <p>Your result will appear here</p>
-
         </div>
+        <div class="question">
+            <h4>Question 2</h4>
+            <label for="coffeeLover">Do you like Coffee?</label>
+            <div class="answer">
+                <input id="coffeeLover" type="radio" name=" answer"> Yes
+                <input id="coffeeHater" type="radio" value="yes" name=" answer" checked="checked"> No
+            </div>
+        </div>
+        <div class="question">
+            <h4>Question 3</h4>
+            <label for="musicLover">Do you like Music?</label>
+            <div class="answer">
+                <input id="musicLover" type="radio" name=" answer"> Yes
+                <input id="musicHater" type="radio" value="yes" name=" answer" checked="checked"> No
+            </div>
+        </div>
+        <div class="question">
+            <h4>Question 4</h4>
+            <label for="movieLover">Do you like Movies?</label>
+            <div class="answer">
+                <input id="movieLover" type="radio" name=" answer"> Yes
+                <input id="movieHater" type="radio" value="yes" name=" answer" checked="checked"> No
+            </div>
+        </div>
+        <div class="question">
+            <h4>Question 5</h4>
+            <label for="juiceLover">Do you like Orange Juice?</label>
+            <div class="answer">
+                <input id="juiceLover" type="radio" name=" answer"> Yes
+                <input id="juiceHater" type="radio" value="yes" name=" answer" checked="checked"> No
+            </div>
+        </div>
+    </form>
+    <div id="results" class="hidden">
+        <h3>Results!</h3>
+        <p>Your result will appear here</p>
+
+    </div>
 </body>
 
 </html>
