@@ -96,7 +96,7 @@ window.onload = function () {
                     showResultC();
                 } else {
                     showResultRetry();
-                    result.classList.add('hidden');
+
                 }
             });
         });

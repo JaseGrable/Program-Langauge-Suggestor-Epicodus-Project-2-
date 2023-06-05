@@ -1,5 +1,6 @@
 .hidden {
     display: none;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .radio-align {
@@ -7,4 +8,33 @@
     justify-content: flex-start;
     margin-bottom: 10px;
 
+}
+
+.answer {
+    font-weight: bold;
+}
+
+.question {
+    font-style: oblique;
+}
+
+#question2 {
+    font-style: oblique;
+}
+
+#question3 {
+    font-style: oblique;
+}
+
+#question4 {
+    font-style: oblique;
+}
+
+#question5 {
+    font-style: oblique;
+}
+
+#resultRetry {
+    font-style: oblique;
+    font-size: larger;
 }
