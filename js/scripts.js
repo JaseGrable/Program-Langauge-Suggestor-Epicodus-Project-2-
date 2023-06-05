@@ -6,9 +6,9 @@ window.onload = function () {
     const question4 = document.getElementById('question4');
     const question5 = document.getElementById('question5');
     const resultSection = document.getElementById('result');
-    const resultPython = document.getElementById('resultPython');
-    const resultJava = document.getElementById('resultJava');
-    const resultC = document.getElementById('resultC');
+    const resultPython = document.getElementById('pythonResult');
+    const resultJava = document.getElementById('javaResult');
+    const resultC = document.getElementById('cResult');
     const resultRetry = document.getElementById('resultRetry');
     const refreshButton = document.getElementById('refreshButton');
 
@@ -24,6 +24,7 @@ window.onload = function () {
                     showResultPython();
                 } else {
                     showQuestion2();
+                    result.classList.add('hidden');
                 }
             });
         });
@@ -41,6 +42,7 @@ window.onload = function () {
                     showResultJava();
                 } else {
                     showQuestion3();
+                    result.classList.add('hidden');
                 }
             });
         });
@@ -58,6 +60,7 @@ window.onload = function () {
                     showResultC();
                 } else {
                     showQuestion4();
+                    result.classList.add('hidden');
                 }
             });
         });
@@ -75,6 +78,7 @@ window.onload = function () {
                     showResultJava();
                 } else {
                     showQuestion5();
+                    result.classList.add('hidden');
                 }
             });
         });
@@ -92,6 +96,7 @@ window.onload = function () {
                     showResultC();
                 } else {
                     showResultRetry();
+                    result.classList.add('hidden');
                 }
             });
         });
