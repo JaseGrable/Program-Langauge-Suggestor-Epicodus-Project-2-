@@ -38,3 +38,12 @@
     font-style: oblique;
     font-size: larger;
 }
+
+.info {
+    font-style: oblique;
+}
+
+body {
+    background-color: aqua;
+    color: rgb(53, 53, 53);
+}
